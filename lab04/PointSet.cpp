@@ -1,6 +1,13 @@
+#include <iostream>
 #include "PointSet.h"
-#include "Pont.h"
-include <vector>
+#include "Point.h"
+#include <vector> 
+#define M 2000
 
-void
 
+using namespace std;
+
+PointSet::PointSet(int n) 
+{
+	
+}
