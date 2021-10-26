@@ -22,7 +22,7 @@ public:
 	double minDistance() const;
 	//összesen hány távolság értelmezhető n
 	//különböző pont között
-	int numDistances() const;
+	int numDistances() const; // { return distances.size() }
 	//a pontok tároló kiíratása
 	void printPoints() const;
 	//a tavolsagok tároló kiíratása

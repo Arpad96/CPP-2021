@@ -1,6 +1,10 @@
 #include "Point.h"
+#include <math.h>
+#include <iostream>
 
-Point::Point(int x, int y) 
+using namespace std;
+
+Point::Point(int x, int y)
 {
 	if (x >= 0 && x <= 2000) this->x = x;
 	else
@@ -20,9 +24,20 @@ int Point::getY() const
 	return y;
 }
 
-/*double distanceTo(const Point& point)const
+double Point::distanceTo(const Point& point)const
 {
+	int distX = pow(point.getX() - this->getX(),2);
+	int distY = pow(point.getY() - this->getY(),2);
 
-}*/
+	return sqrt(distX + distY);
+}
+
+void Point::print() const
+{
+	cout << "(" << this->getX() << "," << this->getY() << ")";
+}
+
+
+
 
 

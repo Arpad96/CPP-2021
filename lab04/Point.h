@@ -9,5 +9,6 @@ public:
 	int getX() const;
 	int getY() const;
 	double distanceTo(const Point& point)const;
+	void print() const;
 };
 #endif /* PONT_H */
