@@ -9,8 +9,8 @@ class Polynomial {
 	int capacity;
 public:
 	Polynomial(int degree, const double coefficients[]);
-	Polynomial(const Polynomial& that);
-	Polynomial(Polynomial&& that);
+	Polynomial(const Polynomial& that);//copy const.
+	Polynomial(Polynomial&& that);//move const.
 	~Polynomial();
 	// Polinom fokszáma
 	int degree() const;
